@@ -226,9 +226,11 @@
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
-
-    <keybind key="A-d">
-      <action name="ToggleDecorations"/>
+    <keybind key="W-A-f"> <!-- fill our area -->
+      <action name="GrowToEdgeNorth"/>
+      <action name="GrowToEdgeEast"/>
+      <action name="GrowToEdgeSouth"/>
+      <action name="GrowToEdgeWest"/>
     </keybind>
 
     <keybind key="A-F4">
