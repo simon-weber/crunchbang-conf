@@ -226,6 +226,11 @@
       <action name="ToggleShowDesktop"/>
     </keybind>
     <!-- Keybindings for windows -->
+
+    <keybind key="A-d">
+      <action name="ToggleDecorations"/>
+    </keybind>
+
     <keybind key="A-F4">
       <action name="Close"/>
     </keybind>
