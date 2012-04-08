@@ -33,7 +33,7 @@
 		<item label="Text Editor">
 			<action name="Execute">
 				<execute>
-					editor
+					run_seditor
 				</execute>
 			</action>
 		</item>
@@ -238,7 +238,7 @@
 				<item label="Edit .conkyrc">
 					<action name="Execute">
 						<execute>
-							terminator --command="editor ~/.conkyrc"
+							run_editor ~/.conkyrc
 						</execute>
 					</action>
 				</item>
@@ -269,7 +269,7 @@
 				<item label="Edit start-up script">
 					<action name="Execute">
 						<execute>
-							terminator --command="editor ~/.config/dmenu/dmenu-bind.sh"
+							run_editor ~/.config/dmenu/dmenu-bind.sh
 						</execute>
 					</action>
 				</item>
@@ -286,7 +286,7 @@
 				<item label="Edit config file">
 					<action name="Execute">
 						<execute>
-							terminator --command="editor ~/.gmrunrc"
+							run_editor "~/.gmrunrc"
 						</execute>
 					</action>
 				</item>
@@ -303,21 +303,21 @@
 				<item label="Edit menu.xml">
 					<action name="Execute">
 						<execute>
-							terminator --command="editor ~/.config/openbox/menu.xml"
+							run_editor "~/.config/openbox/menu.xml"
 						</execute>
 					</action>
 				</item>
 				<item label="Edit rc.xml">
 					<action name="Execute">
 						<execute>
-							terminator --command="editor ~/.config/openbox/rc.xml"
+							run_editor "~/.config/openbox/rc.xml"
 						</execute>
 					</action>
 				</item>
 				<item label="Edit autostart">
 					<action name="Execute">
 						<execute>
-							terminator --command="editor ~/.config/openbox/autostart"
+							run_editor "~/.config/openbox/autostart"
 						</execute>
 					</action>
 				</item>
@@ -353,7 +353,7 @@
 				<item label="Edit config file">
 					<action name="Execute">
 						<execute>
-							terminator --command="editor ~/.config/terminator/config"
+							run_editor "~/.config/terminator/config"
 						</execute>
 					</action>
 				</item>
@@ -370,7 +370,7 @@
 				<item label="Edit config file">
 					<action name="Execute">
 						<execute>
-							terminator --command="editor ~/.config/tint2/tint2rc"
+							run_editor "~/.config/tint2/tint2rc"
 						</execute>
 					</action>
 				</item>
