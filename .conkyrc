@@ -68,11 +68,16 @@ S Y S T E M    I N F O
 ${hr}
 Host:$alignr$nodename
 Uptime:$alignr$uptime
-RAM:$alignr$mem/$memmax
-Swap usage:$alignr$swap/$swapmax
-Disk usage:$alignr${fs_used /}/${fs_size /}
-CPU usage:$alignr${cpu cpu0}%
-${if_up wlan0}Connection quality:$alignr${wireless_link_qual_perc wlan0}%
+
+CPU1:${alignr}${cpubar cpu1 8,60}
+CPU2:${alignr}${cpubar cpu2 8,60}
+RAM: $memperc% ${alignr}${membar 8,60}
+
+Disk usage:$alignr${fs_bar 8,60}
+${if_up wlan0}
+802.11 quality:$alignr${wireless_link_bar 8,60 wlan0}
+802.11 bitrate:$alignr${wireless_bitrate wlan0}
+${endif}
 
 S H O R T C U T    K E Y S
 ${hr}
