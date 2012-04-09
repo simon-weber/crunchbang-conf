@@ -78,6 +78,7 @@ ${if_up wlan0}
 802.11 quality:$alignr${wireless_link_bar 8,60 wlan0}
 802.11 bitrate:$alignr${wireless_bitrate wlan0}
 ${endif}
+${if_up tun0} VPN is active.
 
 S H O R T C U T    K E Y S
 ${hr}
