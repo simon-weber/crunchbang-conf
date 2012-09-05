@@ -1,8 +1,18 @@
 set nocompatible                " choose no compatibility with legacy vi
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'tpope/vim-surround'
+Bundle 'scrooloose/syntastic'
+
+filetype plugin indent on     " required!
+
 syntax enable
 set encoding=utf-8
 set showcmd                     " display incomplete commands
-filetype plugin indent on       " load file type plugins + indentation
 
 "" Whitespace
 set nowrap                      " don't wrap lines
