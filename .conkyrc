@@ -58,7 +58,7 @@ gap_y 56
 no_buffers yes
 uppercase no
 cpu_avg_samples 2
-override_utf8_locale no
+override_utf8_locale yes #for temp output with an A
 
 ##############################################
 #  Output
@@ -71,6 +71,7 @@ Uptime:$alignr$uptime
 
 CPU1:${alignr}${cpubar cpu1 8,60}
 CPU2:${alignr}${cpubar cpu2 8,60}
+Temp:${alignr}${execi 10 sensors | grep ^temp1 | tail -n 1 |awk '{print $2}'}
 RAM: $memperc% ${alignr}${membar 8,60}
 
 Disk usage:$alignr${fs_bar 8,60}

@@ -28,3 +28,11 @@ set smartcase                   " ... unless they contain at least one capital
 
 
 au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
+
+"" Emacs-style autoindent:
+set cinkeys=0{,0},0),0#,!<Tab>,;,:,o,O,e
+set indentkeys=!<Tab>,o,O
+map <Tab> i<Tab><Esc>^
+filetype indent on
+set cinoptions=:0,(0,u0,W1s
+autocmd FileType * setlocal indentkeys+=!<Tab>
